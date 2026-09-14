@@ -11,7 +11,7 @@ public class CalcClient {
             PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
             BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             
-            writer.println("4"); // Gửi số 5 lên server để tính bình phương
+            writer.println("4"); // Gửi số 4 lên server để tính bình phương
             String response = reader.readLine();
             System.out.println("Ket qua nhan duoc tu Server: " + response+" là kết quả của phép tính bình phương");
             
